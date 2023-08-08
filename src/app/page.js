@@ -9,18 +9,17 @@ export default function Home() {
 		<div>
 			<main className=" bg-blue-700">
 				<section className="h-screen overflow-hidden">
-					<nav className="bg-white py-10 mb-6 flex justify-between">
-						<h1 className="text-xl font-burtons">Hello World</h1>
+					<nav className="bg-white pt-8 px-3 mb-6 flex justify-between ">
+						<h1 className="text-xl font-burtons pb-3">Hello World</h1>
 						<ul className="flex items-center">
 							<li>
-								<BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+								<BsFillMoonStarsFill className="cursor-pointer pb-4 text-5xl" />
 							</li>
-							<li>
+							{/* <li>
 								<a className="bg-cyan-500 text-white px-4 py-2 rounded" href="#">
 									Resume
 								</a>
-							</li>
-							<li>Test2</li>
+							</li> */}
 						</ul>
 					</nav>
 					<div className="flex flex-col  bg-black z-1 px-2">
@@ -38,17 +37,24 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="bg-white text-center p-0">
-							<p className="text-md py-2 leading-normal font-burtons">I enjoy making web applications, challenging myself, and learning from others. I believe how you do anything is how you do everything.</p>
+							<p className="text-lg py-2 leading-normal font-burtons">I enjoy making web applications, challenging myself, and learning from others. I believe how you do anything is how you do everything.</p>
 						</div>
 					</div>
-					<div className="text-center p-10">
-						<h2 className="text-5xl py-2">Joshua Garvey</h2>
-						<h3 className="text-2xl py-2">Full Stack</h3>
-						<p className="text-md py-5 leading-8">I enjoy making web applications, challenging myself, and learning from others. I believe how you do anything is how you do everything so the goal is to do everything and anything to the the best of my ability and than improve.</p>
+					<div className="text-center  h-2/5 py-4 px-2 bg-black">
+						<div className=" bg-orange-300 h-full ">
+							<h2 className="bg-yellow-100 text-2xl py-2">Projects</h2>
+							<div className="flex flex-row flex-wrap gap-6  h-3/4 bg-white px-4">
+								<div className="w-1/4 h-1/2   bg-purple-400 ">test</div>
+								<div className="w-1/4 h-1/2   bg-purple-400">test</div>
+								<div className="w-1/4 h-1/2   bg-purple-400">test</div>
+								<div className="w-1/4 h-1/2   bg-purple-400">test</div>
+								<div className="w-1/4 h-1/2   bg-purple-400">test</div>
+							</div>
+						</div>
 					</div>
-					<div className="text-5xl flex justify-center gap-16 py-3">
-						<AiFillTwitterCircle />
-						<AiFillLinkedin />
+					<div className="rounded-full bg-gray-500 text-5xl flex justify-center gap-16 py-3 mt-3">
+						<AiFillTwitterCircle className="bg-white rounded-full" />
+						<AiFillLinkedin className="text-white rounded-full" />
 						<AiFillYoutube />
 					</div>
 					{/* <div>
