@@ -1,10 +1,26 @@
+"use client";
+
+import React from "react";
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
 import Image from "next/image";
 import web1 from "/public/josh.jpeg";
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
+import "./styles.css";
 
 export default function Home() {
+	const [sliderRef, instanceRef] = useKeenSlider(
+		{
+			slideChanged() {
+				console.log("slide changed");
+			},
+		},
+		[
+			// add plugins here
+		]
+	);
 	return (
 		<div>
 			<main className=" bg-blue-700">
@@ -40,17 +56,30 @@ export default function Home() {
 							<p className="text-lg py-2 leading-normal font-burtons">I enjoy making web applications, challenging myself, and learning from others. I believe how you do anything is how you do everything.</p>
 						</div>
 					</div>
+
 					<div className="text-center  h-2/5 py-4 px-2 bg-black">
 						<div className=" bg-orange-300 h-full ">
 							<h2 className="bg-yellow-100 text-2xl py-2">Projects</h2>
-							<div className="flex flex-row flex-wrap gap-6  h-3/4 bg-white px-4">
+
+							{/* <div className="flex flex-row flex-wrap gap-6  h-3/4 bg-white px-4">
 								<div className="w-1/4 h-1/2   bg-purple-400 ">test</div>
 								<div className="w-1/4 h-1/2   bg-purple-400">test</div>
 								<div className="w-1/4 h-1/2   bg-purple-400">test</div>
 								<div className="w-1/4 h-1/2   bg-purple-400">test</div>
 								<div className="w-1/4 h-1/2   bg-purple-400">test</div>
-							</div>
+							</div> */}
 						</div>
+					</div>
+					<div ref={sliderRef} className="keen-slider flex  w-1/4 bg-blue">
+						<div className="keen-slider__slide flex">
+							<Image className="rounded-full bg-white h-auto w-1/5 border-4 border-black  " width={90} height={90} src={web1} alt="idk" />
+							<Image className="rounded-full bg-white h-auto w-1/5 border-4 border-black  " width={90} height={90} src={web1} alt="idk" />
+						</div>
+						<div className="keen-slider__slide">
+							2
+							<Image className="rounded-full bg-white h-auto w-1/5 border-4 border-black  " width={90} height={90} src={web1} alt="idk" />
+						</div>
+						<div className="keen-slider__slide">3</div>
 					</div>
 					<div className="rounded-full bg-gray-500 text-5xl flex justify-center gap-16 py-3 mt-3">
 						<AiFillTwitterCircle className="bg-white rounded-full" />
