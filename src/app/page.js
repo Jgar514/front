@@ -28,9 +28,9 @@ export default function Home() {
 		},
 	});
 	return (
-		<div className="max-h-screen overflow-hidden">
+		<div className="max-h-5/6 overflow-hidden">
 			<main className=" bg-blue-700">
-				<section className="h-screen overflow-hidden">
+				<section className="h-full overflow-hidden">
 					<nav className="bg-white pt-8 px-3 mb-6 flex justify-between ">
 						<h1 className="text-xl font-burtons pb-3">Hello World1</h1>
 						<ul className="flex items-center">
