@@ -28,7 +28,7 @@ export default function Home() {
 		},
 	});
 	return (
-		<div className="max-h-5/6 overflow-hidden">
+		<div className="max-h-screen overflow-hidden">
 			<main className=" bg-blue-700">
 				<section className="h-full overflow-hidden">
 					<nav className="bg-white pt-8 px-3 mb-6 flex justify-between ">
