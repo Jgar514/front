@@ -28,7 +28,7 @@ export default function Home() {
 		},
 	});
 	return (
-		<div>
+		<div className="overflow-hidden">
 			<main className=" bg-blue-700">
 				<section className="h-screen overflow-hidden">
 					<nav className="bg-white pt-8 px-3 mb-6 flex justify-between ">
@@ -66,7 +66,7 @@ export default function Home() {
 					<div className="text-center  h-2/5 py-4 px-2 bg-black">
 						<div className=" bg-orange-300 h-full ">
 							<h2 className="bg-yellow-100 text-2xl py-2">Projects</h2>
-							<div ref={sliderRef} className="keen-slider">
+							<div ref={sliderRef} className="keen-slider h-2/5">
 								<div className="keen-slider__slide number-slide1">1</div>
 								<div className="keen-slider__slide number-slide2">2</div>
 								<div className="keen-slider__slide number-slide3">3</div>
