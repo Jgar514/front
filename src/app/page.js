@@ -28,11 +28,11 @@ export default function Home() {
 		},
 	});
 	return (
-		<div className="overflow-hidden">
+		<div className="max-h-screen overflow-hidden">
 			<main className=" bg-blue-700">
 				<section className="h-screen overflow-hidden">
 					<nav className="bg-white pt-8 px-3 mb-6 flex justify-between ">
-						<h1 className="text-xl font-burtons pb-3">Hello World</h1>
+						<h1 className="text-xl font-burtons pb-3">Hello World1</h1>
 						<ul className="flex items-center">
 							<li>
 								<BsFillMoonStarsFill className="cursor-pointer pb-4 text-5xl" />
