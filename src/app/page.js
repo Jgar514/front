@@ -9,6 +9,7 @@ import web1 from "/public/josh.jpeg";
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
 import "./styles.css";
+import Tabbox from "./Tabbox";
 
 export default function Home() {
 	// const [sliderRef, instanceRef] = useKeenSlider(
@@ -21,14 +22,9 @@ export default function Home() {
 	// 		// add plugins here
 	// 	]
 	// );
-	const [sliderRef] = useKeenSlider({
-		slides: {
-			perView: 2.5,
-			spacing: 15,
-		},
-	});
+
 	return (
-		<main className=" bg-blue-700">
+		<main className="h-screen bg-blue-700">
 			<section className="h-screen overflow-hidden">
 				<nav className="bg-white pt-8 px-3 mb-6 flex justify-between ">
 					<h1 className="text-xl font-burtons pb-3">Hello World1</h1>
@@ -65,14 +61,7 @@ export default function Home() {
 				<div className="text-center  h-2/5 py-4 px-2 bg-black">
 					<div className=" bg-orange-300 h-full ">
 						<h2 className="bg-yellow-100 text-2xl py-2">Projects</h2>
-						<div ref={sliderRef} className="keen-slider h-2/5">
-							<div className="keen-slider__slide number-slide1">1</div>
-							<div className="keen-slider__slide number-slide2">2</div>
-							<div className="keen-slider__slide number-slide3">3</div>
-							<div className="keen-slider__slide number-slide4">4</div>
-							<div className="keen-slider__slide number-slide5">5</div>
-							<div className="keen-slider__slide number-slide6">6</div>
-						</div>
+						<Tabbox />
 						{/* <div ref={sliderRef} className="keen-slider flex w-3/5 bg-blue">
 								<div className="keen-slider__slide flex  bg-white w-1/2 justify-center gap-10 items-center ">
 									<Image className="rounded-full bg-white h-auto w-1/5 border-4 border-black  " width={90} height={90} src={web1} alt="idk" />
