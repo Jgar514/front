@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
-
 const nextConfig = {
-	basePath: "/Front",
+	/* config options here */
 };
+
 module.exports = nextConfig;
